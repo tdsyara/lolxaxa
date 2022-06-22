@@ -1,7 +1,7 @@
 let RemoveMines=false
 if (e.keyCode == 53 && Utils.isGameReady() && Utils.isNotOpenChat())
     {
-        RemoveMines = !autoMining;
+        RemoveMines = !RemoveMines;
     }
 })
 RemoveMines.process = function (localPlayer)
