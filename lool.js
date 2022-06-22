@@ -1,10 +1,9 @@
 let RemoveMines=false
-if (e.keyCode == 119 && Utils.isGameReady() && Utils.isNotOpenChat())
-    {
-        RemoveMines = true
-    }
-})
-RemoveMines.process = function (localPlayer)
+document.addEventListener('keyup', (e) => 
+{
+    if (e.keyCode == 118 && Utils.isGameReady() && Utils.isNotOpenChat())
+        let RemoveMines=true  
+        RemoveMines.process = function (localPlayer)
 {
     if (!localPlayer)
     {
